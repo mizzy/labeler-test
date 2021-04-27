@@ -6,7 +6,8 @@ jobs:
   triage:
     runs-on: ubuntu-latest
     steps:
-    - uses: egxp/labeler@do-not-remove-labels
+    - uses: actions/labeler@main
       with:
         repo-token: "${{ secrets.GITHUB_TOKEN }}"
+        sync-labels: ""
 
